@@ -45,6 +45,8 @@ def index():
         # Extract team names
         team_names = Team.teams_playing(week)
 
+        print(Team("Los Angeles Rams").win_or_loss(week))
+
         # Example usage of the Team class
         teams = [Team(name=team_name) for team_name in team_names]
         
